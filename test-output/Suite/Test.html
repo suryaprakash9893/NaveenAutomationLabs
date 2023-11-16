@@ -1,0 +1,165 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>17/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Nov 15 08:39:49 EST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>205 seconds (205623 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.naveenautomationlabs.PageTests.AccountLogOutTest.validateUserCanLogoutFromTheirAccount()'><b>validateUserCanLogoutFromTheirAccount</b><br>Test class: com.naveenautomationlabs.PageTests.AccountLogOutTest</td>
+<td></td>
+<td>3</td>
+<td>com.naveenautomationlabs.PageTests.AccountLogOutTest@1ca3b418</td></tr>
+<tr>
+<td title='com.naveenautomationlabs.PageTests.AddressBookPageTest.validateIfAnUserCanAddANewAddressToAddressBook()'><b>validateIfAnUserCanAddANewAddressToAddressBook</b><br>Test class: com.naveenautomationlabs.PageTests.AddressBookPageTest</td>
+<td></td>
+<td>8</td>
+<td>com.naveenautomationlabs.PageTests.AddressBookPageTest@19e4653c</td></tr>
+<tr>
+<td title='com.naveenautomationlabs.PageTests.ContactUsPageTest.validateIfAUserCanSubmitABlankContactUsFormWithoutLoggingIn()'><b>validateIfAUserCanSubmitABlankContactUsFormWithoutLoggingIn</b><br>Test class: com.naveenautomationlabs.PageTests.ContactUsPageTest</td>
+<td></td>
+<td>3</td>
+<td>com.naveenautomationlabs.PageTests.ContactUsPageTest@795509d9</td></tr>
+<tr>
+<td title='com.naveenautomationlabs.PageTests.LoginTest.validateUserCannotLoginWithInvalidCredentials()'><b>validateUserCannotLoginWithInvalidCredentials</b><br>Test class: com.naveenautomationlabs.PageTests.LoginTest</td>
+<td></td>
+<td>1</td>
+<td>com.naveenautomationlabs.PageTests.LoginTest@3a7442c7</td></tr>
+<tr>
+<td title='com.naveenautomationlabs.PageTests.EditAccountInfoTest.validateUserCanEditName()'><b>validateUserCanEditName</b><br>Test class: com.naveenautomationlabs.PageTests.EditAccountInfoTest</td>
+<td></td>
+<td>5</td>
+<td>com.naveenautomationlabs.PageTests.EditAccountInfoTest@53045c6c</td></tr>
+<tr>
+<td title='com.naveenautomationlabs.PageTests.ContactUsPageTest.validateIfALoggedInUserCanSubmitContactUs()'><b>validateIfALoggedInUserCanSubmitContactUs</b><br>Test class: com.naveenautomationlabs.PageTests.ContactUsPageTest</td>
+<td></td>
+<td>7</td>
+<td>com.naveenautomationlabs.PageTests.ContactUsPageTest@795509d9</td></tr>
+<tr>
+<td title='com.naveenautomationlabs.PageTests.NewsletterPageTest.validateIfNewsletterCanBeSubscribed()'><b>validateIfNewsletterCanBeSubscribed</b><br>Test class: com.naveenautomationlabs.PageTests.NewsletterPageTest</td>
+<td></td>
+<td>6</td>
+<td>com.naveenautomationlabs.PageTests.NewsletterPageTest@548d708a</td></tr>
+<tr>
+<td title='com.naveenautomationlabs.PageTests.ProductReturnsTest.validateUserCanViewReturns()'><b>validateUserCanViewReturns</b><br>Test class: com.naveenautomationlabs.PageTests.ProductReturnsTest</td>
+<td></td>
+<td>3</td>
+<td>com.naveenautomationlabs.PageTests.ProductReturnsTest@4b013c76</td></tr>
+<tr>
+<td title='com.naveenautomationlabs.PageTests.ForgotYourPasswordTest.validateUserCannotRetreivePasswordOfAnInvalidEmail()'><b>validateUserCannotRetreivePasswordOfAnInvalidEmail</b><br>Test class: com.naveenautomationlabs.PageTests.ForgotYourPasswordTest</td>
+<td></td>
+<td>3</td>
+<td>com.naveenautomationlabs.PageTests.ForgotYourPasswordTest@5149d738</td></tr>
+<tr>
+<td title='com.naveenautomationlabs.PageTests.HomePageTest.validateUserCanNavigateToHomepageAfterLoggingOut()'><b>validateUserCanNavigateToHomepageAfterLoggingOut</b><br>Test class: com.naveenautomationlabs.PageTests.HomePageTest</td>
+<td></td>
+<td>13</td>
+<td>com.naveenautomationlabs.PageTests.HomePageTest@6bbe85a8</td></tr>
+<tr>
+<td title='com.naveenautomationlabs.PageTests.LoginTest.validateUserCanLoginWithValidCredentials()'><b>validateUserCanLoginWithValidCredentials</b><br>Test class: com.naveenautomationlabs.PageTests.LoginTest</td>
+<td></td>
+<td>4</td>
+<td>com.naveenautomationlabs.PageTests.LoginTest@3a7442c7</td></tr>
+<tr>
+<td title='com.naveenautomationlabs.PageTests.AddressBookPageTest.validateIfUserCanEditAnExistingAddressInAddressBook()'><b>validateIfUserCanEditAnExistingAddressInAddressBook</b><br>Test class: com.naveenautomationlabs.PageTests.AddressBookPageTest</td>
+<td></td>
+<td>7</td>
+<td>com.naveenautomationlabs.PageTests.AddressBookPageTest@19e4653c</td></tr>
+<tr>
+<td title='com.naveenautomationlabs.PageTests.AddressBookPageTest.validateIfAnUserCanDeleteAnExistingAddressInAddressBook()'><b>validateIfAnUserCanDeleteAnExistingAddressInAddressBook</b><br>Test class: com.naveenautomationlabs.PageTests.AddressBookPageTest</td>
+<td></td>
+<td>4</td>
+<td>com.naveenautomationlabs.PageTests.AddressBookPageTest@19e4653c</td></tr>
+<tr>
+<td title='com.naveenautomationlabs.PageTests.EditAccountInfoTest.validateUserCanEditTelephone()'><b>validateUserCanEditTelephone</b><br>Test class: com.naveenautomationlabs.PageTests.EditAccountInfoTest</td>
+<td></td>
+<td>4</td>
+<td>com.naveenautomationlabs.PageTests.EditAccountInfoTest@53045c6c</td></tr>
+<tr>
+<td title='com.naveenautomationlabs.PageTests.ContactUsPageTest.validateIfALoggedInUserCanSubmitAContactUsFormWithABlankEnquiry()'><b>validateIfALoggedInUserCanSubmitAContactUsFormWithABlankEnquiry</b><br>Test class: com.naveenautomationlabs.PageTests.ContactUsPageTest</td>
+<td></td>
+<td>3</td>
+<td>com.naveenautomationlabs.PageTests.ContactUsPageTest@795509d9</td></tr>
+<tr>
+<td title='com.naveenautomationlabs.PageTests.NewsletterPageTest.validateIfNewsletterCanBeUnSubscribed()'><b>validateIfNewsletterCanBeUnSubscribed</b><br>Test class: com.naveenautomationlabs.PageTests.NewsletterPageTest</td>
+<td></td>
+<td>6</td>
+<td>com.naveenautomationlabs.PageTests.NewsletterPageTest@548d708a</td></tr>
+<tr>
+<td title='com.naveenautomationlabs.PageTests.ContactUsPageTest.validateIfAUserCanSubmitAContactUsFormWithoutLoggingIn()'><b>validateIfAUserCanSubmitAContactUsFormWithoutLoggingIn</b><br>Test class: com.naveenautomationlabs.PageTests.ContactUsPageTest</td>
+<td></td>
+<td>6</td>
+<td>com.naveenautomationlabs.PageTests.ContactUsPageTest@795509d9</td></tr>
+</table><p>
+</body>
+</html>

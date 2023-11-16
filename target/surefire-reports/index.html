@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
+              <span class="suite-name border-passed">Surefire suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Surefire_suite" class="navigator-link ">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Surefire_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Surefire_suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Surefire_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Surefire_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Surefire_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Surefire_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">17 methods,   17 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods passed suite-Surefire_suite"> (hide)</a> <!-- hide-methods passed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Surefire_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.naveenautomationlabs.PageTests.ContactUsPageTest" class="method navigator-link" hash-for-method="validateIfALoggedInUserCanSubmitAContactUsFormWithABlankEnquiry">validateIfALoggedInUserCanSubmitAContactUsFormWithABlankEnquiry</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.naveenautomationlabs.PageTests.ContactUsPageTest" class="method navigator-link" hash-for-method="validateIfALoggedInUserCanSubmitContactUs">validateIfALoggedInUserCanSubmitContactUs</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.naveenautomationlabs.PageTests.ContactUsPageTest" class="method navigator-link" hash-for-method="validateIfAUserCanSubmitABlankContactUsFormWithoutLoggingIn">validateIfAUserCanSubmitABlankContactUsFormWithoutLoggingIn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.naveenautomationlabs.PageTests.ContactUsPageTest" class="method navigator-link" hash-for-method="validateIfAUserCanSubmitAContactUsFormWithoutLoggingIn">validateIfAUserCanSubmitAContactUsFormWithoutLoggingIn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.naveenautomationlabs.PageTests.AddressBookPageTest" class="method navigator-link" hash-for-method="validateIfAnUserCanAddANewAddressToAddressBook">validateIfAnUserCanAddANewAddressToAddressBook</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.naveenautomationlabs.PageTests.AddressBookPageTest" class="method navigator-link" hash-for-method="validateIfAnUserCanDeleteAnExistingAddressInAddressBook">validateIfAnUserCanDeleteAnExistingAddressInAddressBook</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.naveenautomationlabs.PageTests.NewsletterPageTest" class="method navigator-link" hash-for-method="validateIfNewsletterCanBeSubscribed">validateIfNewsletterCanBeSubscribed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.naveenautomationlabs.PageTests.NewsletterPageTest" class="method navigator-link" hash-for-method="validateIfNewsletterCanBeUnSubscribed">validateIfNewsletterCanBeUnSubscribed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.naveenautomationlabs.PageTests.AddressBookPageTest" class="method navigator-link" hash-for-method="validateIfUserCanEditAnExistingAddressInAddressBook">validateIfUserCanEditAnExistingAddressInAddressBook</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.naveenautomationlabs.PageTests.EditAccountInfoTest" class="method navigator-link" hash-for-method="validateUserCanEditName">validateUserCanEditName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.naveenautomationlabs.PageTests.EditAccountInfoTest" class="method navigator-link" hash-for-method="validateUserCanEditTelephone">validateUserCanEditTelephone</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.naveenautomationlabs.PageTests.LoginTest" class="method navigator-link" hash-for-method="validateUserCanLoginWithValidCredentials">validateUserCanLoginWithValidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.naveenautomationlabs.PageTests.AccountLogOutTest" class="method navigator-link" hash-for-method="validateUserCanLogoutFromTheirAccount">validateUserCanLogoutFromTheirAccount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.naveenautomationlabs.PageTests.HomePageTest" class="method navigator-link" hash-for-method="validateUserCanNavigateToHomepageAfterLoggingOut">validateUserCanNavigateToHomepageAfterLoggingOut</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.naveenautomationlabs.PageTests.ProductReturnsTest" class="method navigator-link" hash-for-method="validateUserCanViewReturns">validateUserCanViewReturns</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.naveenautomationlabs.PageTests.LoginTest" class="method navigator-link" hash-for-method="validateUserCannotLoginWithInvalidCredentials">validateUserCannotLoginWithInvalidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.naveenautomationlabs.PageTests.ForgotYourPasswordTest" class="method navigator-link" hash-for-method="validateUserCannotRetreivePasswordOfAnInvalidEmail">validateUserCannotRetreivePasswordOfAnInvalidEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Surefire_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.naveenautomationlabs.PageTests.NewsletterPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateIfNewsletterCanBeSubscribed">
+                  </a> <!-- validateIfNewsletterCanBeSubscribed -->
+                  <span class="method-name">validateIfNewsletterCanBeSubscribed</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateIfNewsletterCanBeUnSubscribed">
+                  </a> <!-- validateIfNewsletterCanBeUnSubscribed -->
+                  <span class="method-name">validateIfNewsletterCanBeUnSubscribed</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.naveenautomationlabs.PageTests.AddressBookPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateIfAnUserCanAddANewAddressToAddressBook">
+                  </a> <!-- validateIfAnUserCanAddANewAddressToAddressBook -->
+                  <span class="method-name">validateIfAnUserCanAddANewAddressToAddressBook</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateIfAnUserCanDeleteAnExistingAddressInAddressBook">
+                  </a> <!-- validateIfAnUserCanDeleteAnExistingAddressInAddressBook -->
+                  <span class="method-name">validateIfAnUserCanDeleteAnExistingAddressInAddressBook</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateIfUserCanEditAnExistingAddressInAddressBook">
+                  </a> <!-- validateIfUserCanEditAnExistingAddressInAddressBook -->
+                  <span class="method-name">validateIfUserCanEditAnExistingAddressInAddressBook</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.naveenautomationlabs.PageTests.EditAccountInfoTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateUserCanEditName">
+                  </a> <!-- validateUserCanEditName -->
+                  <span class="method-name">validateUserCanEditName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateUserCanEditTelephone">
+                  </a> <!-- validateUserCanEditTelephone -->
+                  <span class="method-name">validateUserCanEditTelephone</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.naveenautomationlabs.PageTests.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateUserCanNavigateToHomepageAfterLoggingOut">
+                  </a> <!-- validateUserCanNavigateToHomepageAfterLoggingOut -->
+                  <span class="method-name">validateUserCanNavigateToHomepageAfterLoggingOut</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.naveenautomationlabs.PageTests.ContactUsPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateIfALoggedInUserCanSubmitAContactUsFormWithABlankEnquiry">
+                  </a> <!-- validateIfALoggedInUserCanSubmitAContactUsFormWithABlankEnquiry -->
+                  <span class="method-name">validateIfALoggedInUserCanSubmitAContactUsFormWithABlankEnquiry</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateIfALoggedInUserCanSubmitContactUs">
+                  </a> <!-- validateIfALoggedInUserCanSubmitContactUs -->
+                  <span class="method-name">validateIfALoggedInUserCanSubmitContactUs</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateIfAUserCanSubmitABlankContactUsFormWithoutLoggingIn">
+                  </a> <!-- validateIfAUserCanSubmitABlankContactUsFormWithoutLoggingIn -->
+                  <span class="method-name">validateIfAUserCanSubmitABlankContactUsFormWithoutLoggingIn</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateIfAUserCanSubmitAContactUsFormWithoutLoggingIn">
+                  </a> <!-- validateIfAUserCanSubmitAContactUsFormWithoutLoggingIn -->
+                  <span class="method-name">validateIfAUserCanSubmitAContactUsFormWithoutLoggingIn</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.naveenautomationlabs.PageTests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateUserCanLoginWithValidCredentials">
+                  </a> <!-- validateUserCanLoginWithValidCredentials -->
+                  <span class="method-name">validateUserCanLoginWithValidCredentials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateUserCannotLoginWithInvalidCredentials">
+                  </a> <!-- validateUserCannotLoginWithInvalidCredentials -->
+                  <span class="method-name">validateUserCannotLoginWithInvalidCredentials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.naveenautomationlabs.PageTests.ProductReturnsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateUserCanViewReturns">
+                  </a> <!-- validateUserCanViewReturns -->
+                  <span class="method-name">validateUserCanViewReturns</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.naveenautomationlabs.PageTests.ForgotYourPasswordTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateUserCannotRetreivePasswordOfAnInvalidEmail">
+                  </a> <!-- validateUserCannotRetreivePasswordOfAnInvalidEmail -->
+                  <span class="method-name">validateUserCannotRetreivePasswordOfAnInvalidEmail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.naveenautomationlabs.PageTests.AccountLogOutTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateUserCanLogoutFromTheirAccount">
+                  </a> <!-- validateUserCanLogoutFromTheirAccount -->
+                  <span class="method-name">validateUserCanLogoutFromTheirAccount</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+        </div> <!-- panel Surefire_suite -->
+        <div panel-name="test-xml-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.naveenautomationlabs.PageTests.AccountLogOutTest&quot;/&gt;
+      &lt;class name=&quot;com.naveenautomationlabs.PageTests.AddressBookPageTest&quot;/&gt;
+      &lt;class name=&quot;com.naveenautomationlabs.PageTests.ContactUsPageTest&quot;/&gt;
+      &lt;class name=&quot;com.naveenautomationlabs.PageTests.EditAccountInfoTest&quot;/&gt;
+      &lt;class name=&quot;com.naveenautomationlabs.PageTests.ForgotYourPasswordTest&quot;/&gt;
+      &lt;class name=&quot;com.naveenautomationlabs.PageTests.HomePageTest&quot;/&gt;
+      &lt;class name=&quot;com.naveenautomationlabs.PageTests.LoginTest&quot;/&gt;
+      &lt;class name=&quot;com.naveenautomationlabs.PageTests.MyAccountTest&quot;/&gt;
+      &lt;class name=&quot;com.naveenautomationlabs.PageTests.NewsletterPageTest&quot;/&gt;
+      &lt;class name=&quot;com.naveenautomationlabs.PageTests.ProductReturnsTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Surefire test --&gt;
+&lt;/suite&gt; &lt;!-- Surefire suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Surefire test (10 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Surefire_suite');
+function tableData_Surefire_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(17);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'validateIfAnUserCanAddANewAddressToAddressBook')
+data.setCell(0, 2, 'com.naveenautomationlabs.PageTests.AddressBookPageTest')
+data.setCell(0, 3, 10490);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'validateIfALoggedInUserCanSubmitContactUs')
+data.setCell(1, 2, 'com.naveenautomationlabs.PageTests.ContactUsPageTest')
+data.setCell(1, 3, 9883);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'validateUserCanNavigateToHomepageAfterLoggingOut')
+data.setCell(2, 2, 'com.naveenautomationlabs.PageTests.HomePageTest')
+data.setCell(2, 3, 9092);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'validateIfNewsletterCanBeUnSubscribed')
+data.setCell(3, 2, 'com.naveenautomationlabs.PageTests.NewsletterPageTest')
+data.setCell(3, 3, 7663);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'validateIfUserCanEditAnExistingAddressInAddressBook')
+data.setCell(4, 2, 'com.naveenautomationlabs.PageTests.AddressBookPageTest')
+data.setCell(4, 3, 6393);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'validateIfAnUserCanDeleteAnExistingAddressInAddressBook')
+data.setCell(5, 2, 'com.naveenautomationlabs.PageTests.AddressBookPageTest')
+data.setCell(5, 3, 6187);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'validateIfAUserCanSubmitAContactUsFormWithoutLoggingIn')
+data.setCell(6, 2, 'com.naveenautomationlabs.PageTests.ContactUsPageTest')
+data.setCell(6, 3, 5914);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'validateIfALoggedInUserCanSubmitAContactUsFormWithABlankEnquiry')
+data.setCell(7, 2, 'com.naveenautomationlabs.PageTests.ContactUsPageTest')
+data.setCell(7, 3, 5854);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'validateUserCanViewReturns')
+data.setCell(8, 2, 'com.naveenautomationlabs.PageTests.ProductReturnsTest')
+data.setCell(8, 3, 5348);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'validateUserCanEditName')
+data.setCell(9, 2, 'com.naveenautomationlabs.PageTests.EditAccountInfoTest')
+data.setCell(9, 3, 5010);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'validateUserCanEditTelephone')
+data.setCell(10, 2, 'com.naveenautomationlabs.PageTests.EditAccountInfoTest')
+data.setCell(10, 3, 4999);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'validateUserCanLogoutFromTheirAccount')
+data.setCell(11, 2, 'com.naveenautomationlabs.PageTests.AccountLogOutTest')
+data.setCell(11, 3, 4710);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'validateIfNewsletterCanBeSubscribed')
+data.setCell(12, 2, 'com.naveenautomationlabs.PageTests.NewsletterPageTest')
+data.setCell(12, 3, 4271);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'validateUserCannotLoginWithInvalidCredentials')
+data.setCell(13, 2, 'com.naveenautomationlabs.PageTests.LoginTest')
+data.setCell(13, 3, 3940);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'validateIfAUserCanSubmitABlankContactUsFormWithoutLoggingIn')
+data.setCell(14, 2, 'com.naveenautomationlabs.PageTests.ContactUsPageTest')
+data.setCell(14, 3, 2245);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'validateUserCannotRetreivePasswordOfAnInvalidEmail')
+data.setCell(15, 2, 'com.naveenautomationlabs.PageTests.ForgotYourPasswordTest')
+data.setCell(15, 3, 1925);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'validateUserCanLoginWithValidCredentials')
+data.setCell(16, 2, 'com.naveenautomationlabs.PageTests.LoginTest')
+data.setCell(16, 3, 1738);
+window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Surefire_suite">
+              </div> <!-- times-div-Surefire_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">1 ignored method</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.naveenautomationlabs.PageTests.MyAccountTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">validateUserCanUpdatePassword</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.naveenautomationlabs.PageTests.AccountLogOutTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">loggerSetup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">launch</span>
+                <span class="method-start">313 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateUserCanLogoutFromTheirAccount</span>
+                <span class="method-start">12129 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.naveenautomationlabs.PageTests.NewsletterPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">loggerSetup</span>
+                <span class="method-start">16839 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">launch</span>
+                <span class="method-start">16845 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateIfNewsletterCanBeSubscribed</span>
+                <span class="method-start">23625 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">launch</span>
+                <span class="method-start">27896 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateIfNewsletterCanBeUnSubscribed</span>
+                <span class="method-start">32528 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.naveenautomationlabs.PageTests.AddressBookPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">loggerSetup</span>
+                <span class="method-start">40191 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">launch</span>
+                <span class="method-start">40197 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateIfAnUserCanAddANewAddressToAddressBook</span>
+                <span class="method-start">44597 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">launch</span>
+                <span class="method-start">55087 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateIfAnUserCanDeleteAnExistingAddressInAddressBook</span>
+                <span class="method-start">60629 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">launch</span>
+                <span class="method-start">66816 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateIfUserCanEditAnExistingAddressInAddressBook</span>
+                <span class="method-start">73652 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.naveenautomationlabs.PageTests.ProductReturnsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">loggerSetup</span>
+                <span class="method-start">80045 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">launch</span>
+                <span class="method-start">80062 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateUserCanViewReturns</span>
+                <span class="method-start">86926 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.naveenautomationlabs.PageTests.ContactUsPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">loggerSetup</span>
+                <span class="method-start">92274 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">launch</span>
+                <span class="method-start">92280 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateIfALoggedInUserCanSubmitAContactUsFormWithABlankEnquiry</span>
+                <span class="method-start">97108 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitBrowser</span>
+                <span class="method-start">102962 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launch</span>
+                <span class="method-start">103302 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateIfALoggedInUserCanSubmitContactUs</span>
+                <span class="method-start">107359 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitBrowser</span>
+                <span class="method-start">117243 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launch</span>
+                <span class="method-start">117387 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateIfAUserCanSubmitABlankContactUsFormWithoutLoggingIn</span>
+                <span class="method-start">123842 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitBrowser</span>
+                <span class="method-start">126087 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launch</span>
+                <span class="method-start">126198 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateIfAUserCanSubmitAContactUsFormWithoutLoggingIn</span>
+                <span class="method-start">132788 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitBrowser</span>
+                <span class="method-start">138702 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.naveenautomationlabs.PageTests.EditAccountInfoTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">loggerSetup</span>
+                <span class="method-start">138853 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">launch</span>
+                <span class="method-start">138853 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateUserCanEditName</span>
+                <span class="method-start">145178 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">launch</span>
+                <span class="method-start">150188 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateUserCanEditTelephone</span>
+                <span class="method-start">157151 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.naveenautomationlabs.PageTests.ForgotYourPasswordTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">loggerSetup</span>
+                <span class="method-start">162154 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">launch</span>
+                <span class="method-start">162154 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateUserCannotRetreivePasswordOfAnInvalidEmail</span>
+                <span class="method-start">169126 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.naveenautomationlabs.PageTests.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">loggerSetup</span>
+                <span class="method-start">171053 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">launch</span>
+                <span class="method-start">171059 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateUserCanNavigateToHomepageAfterLoggingOut</span>
+                <span class="method-start">178422 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.naveenautomationlabs.PageTests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">loggerSetup</span>
+                <span class="method-start">187514 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">launch</span>
+                <span class="method-start">187530 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateUserCanLoginWithValidCredentials</span>
+                <span class="method-start">198796 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">launch</span>
+                <span class="method-start">200534 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateUserCannotLoginWithInvalidCredentials</span>
+                <span class="method-start">208080 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

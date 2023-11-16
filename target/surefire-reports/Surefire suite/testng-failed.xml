@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="1" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="com.naveenautomationlabs.PageTests.ContactUsPageTest">
+        <methods>
+          <include name="launch"/>
+          <include name="quitBrowser"/>
+          <include name="loggerSetup"/>
+          <include name="validateUserCanSubmitContactUsFormWithoutValues"/>
+        </methods>
+      </class> <!-- com.naveenautomationlabs.PageTests.ContactUsPageTest -->
+      <class name="com.naveenautomationlabs.PageTests.NewsletterPageTest">
+        <methods>
+          <include name="loggerSetup"/>
+          <include name="launch"/>
+          <include name="validateIfNewsletterIsNotSubscribed"/>
+          <include name="validateIfNewsletterIsSubscribed"/>
+        </methods>
+      </class> <!-- com.naveenautomationlabs.PageTests.NewsletterPageTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
