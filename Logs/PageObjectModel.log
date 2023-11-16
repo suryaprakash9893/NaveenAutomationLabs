@@ -5078,3 +5078,29 @@
 2023-11-15 11:37:26 INFO  TestBase:105 - Clicked on element: [[ChromeDriver: chrome on WINDOWS (8e65a10d2364203d1a6f3366def9e156)] -> id: grid-view]
 2023-11-15 11:37:26 INFO  TestBase:87 - Finding element using: By.id: grid-view
 2023-11-15 11:37:26 INFO  TestBase:93 - Found element using: By.id: grid-view
+2023-11-16 14:07:38 INFO  TestBase:39 - Navigating to :https://naveenautomationlabs.com/opencart/index.php?route=account/login
+2023-11-16 14:07:42 INFO  TestBase:45 - Navigated to :https://naveenautomationlabs.com/opencart/index.php?route=account/login
+2023-11-16 14:07:42 INFO  TestBase:87 - Finding element using: By.xpath: //a[text()='Continue']
+2023-11-16 14:07:42 INFO  TestBase:93 - Found element using: By.xpath: //a[text()='Continue']
+2023-11-16 14:07:42 INFO  TestBase:99 - Clicking element: [[ChromeDriver: chrome on WINDOWS (423cc616d184667433323b26ec55e084)] -> xpath: //a[text()='Continue']]
+2023-11-16 14:07:44 INFO  TestBase:105 - Clicked on element: [[ChromeDriver: chrome on WINDOWS (423cc616d184667433323b26ec55e084)] -> xpath: //a[text()='Continue']]
+2023-11-16 14:07:44 INFO  TestBase:87 - Finding element using: By.cssSelector: input[name='firstname']
+2023-11-16 14:07:44 INFO  TestBase:93 - Found element using: By.cssSelector: input[name='firstname']
+2023-11-16 14:07:44 INFO  TestBase:87 - Finding element using: By.cssSelector: input[name='lastname']
+2023-11-16 14:07:44 INFO  TestBase:93 - Found element using: By.cssSelector: input[name='lastname']
+2023-11-16 14:07:44 INFO  TestBase:87 - Finding element using: By.cssSelector: input[name='email']
+2023-11-16 14:07:44 INFO  TestBase:93 - Found element using: By.cssSelector: input[name='email']
+2023-11-16 14:07:44 INFO  TestBase:87 - Finding element using: By.cssSelector: input[name='telephone']
+2023-11-16 14:07:44 INFO  TestBase:93 - Found element using: By.cssSelector: input[name='telephone']
+2023-11-16 14:07:45 INFO  TestBase:87 - Finding element using: By.cssSelector: input[name='password']
+2023-11-16 14:07:45 INFO  TestBase:93 - Found element using: By.cssSelector: input[name='password']
+2023-11-16 14:07:45 INFO  TestBase:87 - Finding element using: By.cssSelector: input[name='confirm']
+2023-11-16 14:07:45 INFO  TestBase:93 - Found element using: By.cssSelector: input[name='confirm']
+2023-11-16 14:07:45 INFO  TestBase:87 - Finding element using: By.cssSelector: input[value='Continue']
+2023-11-16 14:07:45 INFO  TestBase:93 - Found element using: By.cssSelector: input[value='Continue']
+2023-11-16 14:07:45 INFO  TestBase:99 - Clicking element: [[ChromeDriver: chrome on WINDOWS (423cc616d184667433323b26ec55e084)] -> css selector: input[value='Continue']]
+2023-11-16 14:07:46 INFO  TestBase:105 - Clicked on element: [[ChromeDriver: chrome on WINDOWS (423cc616d184667433323b26ec55e084)] -> css selector: input[value='Continue']]
+2023-11-16 14:07:46 INFO  TestBase:87 - Finding element using: By.xpath: //div[text()=' Warning: You must agree to the Privacy Policy!']
+2023-11-16 14:07:46 INFO  TestBase:93 - Found element using: By.xpath: //div[text()=' Warning: You must agree to the Privacy Policy!']
+2023-11-16 14:07:46 INFO  TestBase:165 - Getting text on element: Warning: You must agree to the Privacy Policy!
+2023-11-16 14:07:46 INFO  TestBase:171 - Got text on : Warning: You must agree to the Privacy Policy!

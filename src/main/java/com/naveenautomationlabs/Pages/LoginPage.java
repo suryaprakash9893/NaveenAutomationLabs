@@ -3,7 +3,6 @@ package com.naveenautomationlabs.Pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
 import com.naveenautomationlabs.base.TestBase;
 
 public class LoginPage extends TestBase {
@@ -30,10 +29,13 @@ public class LoginPage extends TestBase {
 
 	@FindBy(css = "div.alert")
 	public WebElement loginCredentialsMismatchAlert;
-	
-	//WebElement for ContactUs form.
-		@FindBy(xpath = "//a[text()='Contact Us']")
-		WebElement contactUsPageButton;
+
+	// WebElement for ContactUs form.
+	@FindBy(xpath = "//a[text()='Contact Us']")
+	WebElement contactUsPageButton;
+
+	@FindBy(xpath = "//a[text()='Continue']")
+	WebElement continueRegister;
 
 	private void enterEmail(String email) {
 		emailInput.sendKeys(email);
@@ -54,9 +56,14 @@ public class LoginPage extends TestBase {
 		forgotPasswordBtn.click();
 		return new ForgotYourPasswordPage();
 	}
-	
-	public  ContactUsPage openContactUsForm() {
+
+	public ContactUsPage openContactUsForm() {
 		contactUsPageButton.click();
 		return new ContactUsPage();
+	}
+
+	public RegistrationPage clickContinueRegisterBtn() {
+		continueRegister.click();
+		return new RegistrationPage();
 	}
 }
