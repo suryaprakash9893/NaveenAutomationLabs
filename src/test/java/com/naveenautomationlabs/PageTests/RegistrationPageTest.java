@@ -33,6 +33,10 @@ public class RegistrationPageTest extends TestBase {
 	public void validateUserCannotRegisterWithoutFillingAllTheMandatoryFields() {
 		registrationPage = loginPage.clickContinueRegisterBtn();
 	}
+	
+	public void validateIfUserCanREgisterWithoutMandatoryFields() {
+		System.out.println("Dummy Test case");
+	}
 
 	@AfterMethod
 	public void quitBrowser() {
