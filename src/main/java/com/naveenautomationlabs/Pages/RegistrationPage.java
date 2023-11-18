@@ -39,6 +39,27 @@ public class RegistrationPage extends TestBase {
 	@FindBy(xpath = "//div[text()=' Warning: You must agree to the Privacy Policy!']")
 	WebElement privacyPolicyAgreeCheckBoxValidationMessage;
 
+	@FindBy(xpath = "//div[text()='First Name must be between 1 and 32 characters!']")
+	WebElement enterFNameRequirements;
+
+	@FindBy(xpath = "//div[text()='Last Name must be between 1 and 32 characters!']")
+	WebElement enterLNameRequirements;
+
+	@FindBy(xpath = "//div[text()='E-Mail Address does not appear to be valid!']")
+	WebElement enterEmailRequirements;
+
+	@FindBy(xpath = "//div[text()='Telephone must be between 3 and 32 characters!']")
+	WebElement enterPhoneRequirements;
+
+	@FindBy(xpath = "//div[text()='Password must be between 4 and 20 characters!']")
+	WebElement enterPasswordRequirements;
+
+	@FindBy(xpath = "//div[text()=' Warning: E-Mail Address is already registered!']")
+	WebElement emailAlreadyRegisteredWarningBanner;
+
+	@FindBy(xpath = "//div[text()='Password confirmation does not match password!']")
+	WebElement passwordsMisMatchWarningBanner;
+
 	private void enterFirstName(String firstName) {
 		inputFirstName.sendKeys(firstName);
 	}
@@ -63,6 +84,34 @@ public class RegistrationPage extends TestBase {
 		inputConfirmPassword.sendKeys(confirmPassword);
 	}
 
+	public String getEnterFNameRequirementsBanner() {
+		return enterFNameRequirements.getText();
+	}
+
+	public String getEnterLNameRequirementsBanner() {
+		return enterLNameRequirements.getText();
+	}
+
+	public String getEnterEmailRequirementsBanner() {
+		return enterEmailRequirements.getText();
+	}
+
+	public String getEnterPhoneRequirementsBanner() {
+		return enterPhoneRequirements.getText();
+	}
+
+	public String getEnterPasswordRequirementsBanner() {
+		return enterPasswordRequirements.getText();
+	}
+
+	public String getEmailAlreadyRegisteredWarningBanner() {
+		return emailAlreadyRegisteredWarningBanner.getText();
+	}
+
+	public String getPasswordMisMatchWarningBanner() {
+		return passwordsMisMatchWarningBanner.getText();
+	}
+
 	public RegistrationSuccessMessagePage clickContinueBtn() {
 		continueBtn.click();
 		return new RegistrationSuccessMessagePage();
@@ -75,8 +124,9 @@ public class RegistrationPage extends TestBase {
 	public String getprivacyPolicyAgreeCheckBoxValidationMessage() {
 		return privacyPolicyAgreeCheckBoxValidationMessage.getText();
 	}
-	
-	public void fillRegistrationForm(String firstName,String lastName,String email,String telephoneNumber,String password,String confirmPassword) {
+
+	public void fillRegistrationForm(String firstName, String lastName, String email, String telephoneNumber,
+			String password, String confirmPassword) {
 		enterFirstName(firstName);
 		enterLastName(lastName);
 		enteremail(email);
@@ -84,5 +134,5 @@ public class RegistrationPage extends TestBase {
 		enterPassword(password);
 		enterConfirmPassword(confirmPassword);
 	}
-	
+
 }
