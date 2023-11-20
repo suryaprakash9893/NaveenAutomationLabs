@@ -1,5 +1,7 @@
 package com.naveenautomationlabs.PageTests;
 
+import java.net.MalformedURLException;
+
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -20,7 +22,7 @@ public class AccountLogOutTest extends TestBase {
 	AccountLogOutPage accountLogOutPage;
 
 	@BeforeMethod
-	public void launch() {
+	public void launch() throws MalformedURLException {
 		initialisation();
 		loginPage = new LoginPage();
 	}

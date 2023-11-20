@@ -1,5 +1,7 @@
 package com.naveenautomationlabs.PageTests;
 
+import java.net.MalformedURLException;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -16,7 +18,7 @@ public class RegistrationPageTest extends TestBase {
 	private RegistrationSuccessMessagePage registrationSuccessMessagePage;
 
 	@BeforeMethod
-	public void launch() {
+	public void launch() throws MalformedURLException {
 		initialisation();
 		loginPage = new LoginPage();
 	}

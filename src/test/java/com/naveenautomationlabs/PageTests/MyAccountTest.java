@@ -1,6 +1,9 @@
 package com.naveenautomationlabs.PageTests;
 
+import java.net.MalformedURLException;
+
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -18,7 +21,7 @@ public class MyAccountTest extends TestBase {
 	EditAccountInfoPage editAccountInfoPage;
 
 	@BeforeMethod
-	public void launch() {
+	public void launch() throws MalformedURLException {
 		initialisation();
 		loginPage = new LoginPage();
 	}
@@ -31,5 +34,10 @@ public class MyAccountTest extends TestBase {
 		myAccountPage = changePasswordPage.changePassword("goppa123", "goppa123");
 		Assert.assertEquals(myAccountPage.getPasswordUpdateSuccessMessageText(),
 				"Success: Your password has been successfully updated.", "Password not changed!");
+	}
+
+	@AfterMethod
+	public void quitBrowser() {
+		tearDown();
 	}
 }

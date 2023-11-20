@@ -1,6 +1,9 @@
 package com.naveenautomationlabs.PageTests;
 
+import java.net.MalformedURLException;
+
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -16,25 +19,31 @@ public class NewsletterPageTest extends TestBase {
 	MyAccountPage myAccountPage;
 
 	@BeforeMethod
-	public void launch() {
+	public void launch() throws MalformedURLException {
 		initialisation();
 		loginPage = new LoginPage();
 	}
-	
+
 	@Test
 	public void validateIfNewsletterCanBeSubscribed() {
-		myAccountPage=loginPage.submitLogin("suryaprakasha@live.in","goppa1234");
-		newsletterPage=myAccountPage.openNewsletterPage();
-		myAccountPage=newsletterPage.enableNewsletterSubs();
-		Assert.assertEquals(myAccountPage.getNewsletterSubUpdateBanner(), "Success: Your newsletter subscription has been successfully updated!" , "Newsletter not subscribed");
-	}
-	
-	@Test
-	public void validateIfNewsletterCanBeUnSubscribed() {
-		myAccountPage=loginPage.submitLogin("suryaprakasha@live.in","goppa1234");
-		newsletterPage=myAccountPage.openNewsletterPage();
-		myAccountPage=newsletterPage.disableNewsletterSubs();
-		Assert.assertEquals(myAccountPage.getNewsletterSubUpdateBanner(), "Success: Your newsletter subscription has been successfully updated!" , "Newsletter not subscribed");
+		myAccountPage = loginPage.submitLogin("suryaprakasha@live.in", "goppa1234");
+		newsletterPage = myAccountPage.openNewsletterPage();
+		myAccountPage = newsletterPage.enableNewsletterSubs();
+		Assert.assertEquals(myAccountPage.getNewsletterSubUpdateBanner(),
+				"Success: Your newsletter subscription has been successfully updated!", "Newsletter not subscribed");
 	}
 
+	@Test
+	public void validateIfNewsletterCanBeUnSubscribed() {
+		myAccountPage = loginPage.submitLogin("suryaprakasha@live.in", "goppa1234");
+		newsletterPage = myAccountPage.openNewsletterPage();
+		myAccountPage = newsletterPage.disableNewsletterSubs();
+		Assert.assertEquals(myAccountPage.getNewsletterSubUpdateBanner(),
+				"Success: Your newsletter subscription has been successfully updated!", "Newsletter not subscribed");
+	}
+
+	@AfterMethod
+	public void quitBrowser() {
+		tearDown();
+	}
 }

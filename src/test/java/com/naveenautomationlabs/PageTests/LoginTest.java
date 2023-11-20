@@ -1,6 +1,9 @@
 package com.naveenautomationlabs.PageTests;
 
+import java.net.MalformedURLException;
+
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -14,21 +17,26 @@ public class LoginTest extends TestBase {
 	MyAccountPage accountPage;
 
 	@BeforeMethod
-	public void launch() {
+	public void launch() throws MalformedURLException {
 		initialisation();
 		loginPage = new LoginPage();
 	}
 
 	@Test
 	public void validateUserCanLoginWithValidCredentials() {
-		loginPage.submitLogin("suryaprakasha@live.in","goppa1234");
+		loginPage.submitLogin("suryaprakasha@live.in", "goppa1234");
 		Assert.assertEquals(driver.getTitle(), "My Account", "Login failed!");
 	}
-	
+
 	@Test
 	public void validateUserCannotLoginWithInvalidCredentials() {
-		loginPage.submitLogin("suryaprakasha@live.in","goppa123");
-		Assert.assertEquals(loginPage.loginCredentialsMismatchAlert.getText(), "Warning: No match for E-Mail Address and/or Password.", "Login passed!");
+		loginPage.submitLogin("suryaprakasha@live.in", "goppa123");
+		Assert.assertEquals(loginPage.loginCredentialsMismatchAlert.getText(),
+				"Warning: No match for E-Mail Address and/or Password.", "Login passed!");
 	}
 
+	@AfterMethod
+	public void quitBrowser() {
+		tearDown();
+	}
 }

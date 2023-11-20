@@ -1,6 +1,9 @@
 package com.naveenautomationlabs.PageTests;
 
+import java.net.MalformedURLException;
+
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -14,7 +17,7 @@ public class ForgotYourPasswordTest extends TestBase {
 	ForgotYourPasswordPage forgotYourPasswordPage;
 
 	@BeforeMethod
-	public void launch() {
+	public void launch() throws MalformedURLException {
 		initialisation();
 		loginPage = new LoginPage();
 	}
@@ -29,5 +32,8 @@ public class ForgotYourPasswordTest extends TestBase {
 				"Warning: The E-Mail Address was not found in our records, please try again!",
 				"Password recovery sent to email");
 	}
-
+	@AfterMethod
+	public void quitBrowser() {
+		tearDown();
+	}
 }
